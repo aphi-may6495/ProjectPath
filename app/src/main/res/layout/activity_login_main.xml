@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d6d6d6"
+    tools:context=".LoginMain">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="25"
+        android:padding="20dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#FF6F50"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/oval2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="text"
+            android:hint="@string/username"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:background="@drawable/ovalet"
+            style="@style/editTextSingle"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/ic_lock"
+            android:background="@drawable/ovalet"
+            style="@style/editTextSingle"/>
+
+        <Button
+            android:id="@+id/btnlg"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/login"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:background="@drawable/oval"
+            android:onClick="clickLg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/forgetpwd"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+</LinearLayout>

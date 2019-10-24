@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d6d6d6"
+    tools:context=".Signin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="25"
+                android:padding="20dp"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="@string/app_name"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:padding="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/oval2">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:hint="@string/username"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/ovalet"
+                    style="@style/editTextSingle"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/ovalet"
+                    style="@style/editTextSingle"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="@string/conpass"
+                    android:inputType="textPassword"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/ovalet"
+                    style="@style/editTextSingle"/>
+
+                <Spinner
+                    android:id="@+id/spingender"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/oval2"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton android:id="@+id/radio_travel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/travel"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/radio_placeown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/placeown"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/chkTerm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/agree1"
+                        android:textSize="12sp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_toEndOf="@+id/chkTerm"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="@string/agree2"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <Button
+                        android:id="@+id/cancel"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/cancel"
+                        android:textSize="15sp"
+                        android:textColor="#FF6F50"
+                        android:textAlignment="center"
+                        android:background="@drawable/oval2"
+                        android:onClick="clickCanS"/>
+
+                    <Button
+                        android:id="@+id/btnSignin"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/signin2"
+                        android:textSize="15sp"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="center"
+                        android:background="@drawable/oval"
+                        android:onClick="clickConS"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Path</string>
+
+    <!--This String in First Screen-->
+    <string name="login">Log in</string>
+    <string name="signin">Create an Account</string>
+    <string name="signin2">Sign in</string>
+    <string name="cancel">Cancel</string>
+
+    <!--This String in Login in & Sign in-->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgetpwd"><u>Forget Password?</u></string>
+    <string name="conpass">Confirm Password</string>
+    <string name="gender">Gender</string>
+    <string name="travel">Traveler</string>
+    <string name="placeown">Place Owner(s)</string>
+    <string name="agree1">I agree with</string>
+    <string name="agree2"><u>Term &amp; Conditions</u></string>
+
+
+</resources>
+
+    <!--<string name=""></string>-->
