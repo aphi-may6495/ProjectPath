@@ -28,7 +28,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class Signin extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     FirebaseUser user;
@@ -53,7 +53,7 @@ public class Signin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signin);
+        setContentView(R.layout.activity_signup);
 
         mAuth = FirebaseAuth.getInstance();
         user = FirebaseAuth.getInstance().getCurrentUser();
@@ -151,7 +151,7 @@ public class Signin extends AppCompatActivity {
     }
 
     public void clickCanS(View view){
-        startActivity(new Intent(Signin.this, FirstScreen.class));
+        startActivity(new Intent(SignUp.this, FirstScreen.class));
     }
 
     public void signIn(){

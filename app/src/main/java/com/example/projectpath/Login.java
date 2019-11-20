@@ -19,7 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class LoginMain extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     FirebaseUser user;
