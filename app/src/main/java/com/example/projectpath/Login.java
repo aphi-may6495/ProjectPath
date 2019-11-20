@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -46,6 +47,7 @@ public class Login extends AppCompatActivity {
 
     public void clickLg(View view){
         final Dialog dialog = new Dialog(this);
+        final Intent in1 = new Intent(this,MainMap.class);
 
         lmail = mailet.getText().toString();
         lpass = passet.getText().toString();
@@ -66,6 +68,7 @@ public class Login extends AppCompatActivity {
                         }
                     });
                     dialog.show();
+                    startActivity(in1);
                 }else{
                     Toast.makeText(getBaseContext(),"Wrong Password!!",Toast.LENGTH_SHORT).show();
                 }
