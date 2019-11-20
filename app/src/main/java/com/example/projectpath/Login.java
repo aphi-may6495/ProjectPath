@@ -65,10 +65,10 @@ public class Login extends AppCompatActivity {
                         @Override
                         public void onClick(View view) {
                             dialog.dismiss();
+                            startActivity(in1);
                         }
                     });
                     dialog.show();
-                    startActivity(in1);
                 }else{
                     Toast.makeText(getBaseContext(),"Wrong Password!!",Toast.LENGTH_SHORT).show();
                 }
