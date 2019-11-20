@@ -41,6 +41,7 @@
                 android:background="@drawable/oval2">
 
                 <EditText
+                    android:id="@+id/usernameSET"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginStart="10dp"
@@ -53,6 +54,7 @@
                     android:background="@drawable/ovalet"
                     style="@style/editTextSingle"/>
                 <EditText
+                    android:id="@+id/passSET"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="20dp"
@@ -65,6 +67,7 @@
                     android:background="@drawable/ovalet"
                     style="@style/editTextSingle"/>
                 <EditText
+                    android:id="@+id/cpassSET"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="20dp"
@@ -98,6 +101,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
+                        android:checked="true"
                         android:text="@string/travel"
                         android:textSize="15sp"
                         android:textColor="#000000"
@@ -126,6 +130,7 @@
                         android:textSize="12sp"
                         android:textColor="#000000"/>
                     <TextView
+                        android:id="@+id/checkboxError"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_toEndOf="@+id/chkTerm"

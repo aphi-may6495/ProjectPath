@@ -40,6 +40,7 @@
         android:background="@drawable/oval2">
 
         <EditText
+            android:id="@+id/lmailet"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
@@ -52,6 +53,7 @@
             android:background="@drawable/ovalet"
             style="@style/editTextSingle"/>
         <EditText
+            android:id="@+id/lpasset"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
