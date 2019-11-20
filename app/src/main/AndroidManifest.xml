@@ -50,10 +50,6 @@
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name=".FoodExplorer"
-            android:label="@string/title_activity_food_explorer"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".MainMap"
             android:label="@string/title_activity_main_map"
             android:theme="@style/AppTheme.NoActionBar" />

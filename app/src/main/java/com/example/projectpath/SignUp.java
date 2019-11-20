@@ -59,12 +59,12 @@ public class SignUp extends AppCompatActivity {
         user = FirebaseAuth.getInstance().getCurrentUser();
         myRef = FirebaseDatabase.getInstance().getReference();
 
-        mailet = (EditText)findViewById(R.id.usernameSET);
-        passet = (EditText)findViewById(R.id.passSET);
-        cpasset = (EditText)findViewById(R.id.cpassSET);
+        mailet = findViewById(R.id.usernameSET);
+        passet = findViewById(R.id.passSET);
+        cpasset = findViewById(R.id.cpassSET);
 
-        spn1 = (Spinner)findViewById(R.id.spingender);
-        arrayAdapter = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,gender);
+        spn1 = findViewById(R.id.spingender);
+        arrayAdapter = new ArrayAdapter<>(this,R.layout.support_simple_spinner_dropdown_item,gender);
         spn1.setAdapter(arrayAdapter);
 
         spn1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -118,7 +118,7 @@ public class SignUp extends AppCompatActivity {
             dialog2.setCancelable(false);
             dialog2.setCanceledOnTouchOutside(false);
 
-            btncon = (Button)dialog1.findViewById(R.id.btnSignin);
+            btncon = dialog1.findViewById(R.id.btnSignin);
             btncon.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -127,7 +127,7 @@ public class SignUp extends AppCompatActivity {
                     //submit
                     signIn();
 
-                    btnconsucS = (Button)dialog2.findViewById(R.id.btnconsucsign);
+                    btnconsucS = dialog2.findViewById(R.id.btnconsucsign);
                     btnconsucS.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -138,7 +138,7 @@ public class SignUp extends AppCompatActivity {
                     dialog2.show();
                 }
             });
-            btnscancelS = (Button)dialog1.findViewById(R.id.btncancels);
+            btnscancelS = dialog1.findViewById(R.id.btncancels);
             btnscancelS.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -181,8 +181,8 @@ public class SignUp extends AppCompatActivity {
 
     public boolean checkInfo(){
 
-        CheckBox chkb = (CheckBox)findViewById(R.id.chkTerm);
-        TextView ctve = (TextView)findViewById(R.id.checkboxError);
+        CheckBox chkb = findViewById(R.id.chkTerm);
+        TextView ctve = findViewById(R.id.checkboxError);
 
         umail = mailet.getText().toString();
         upass = passet.getText().toString();
