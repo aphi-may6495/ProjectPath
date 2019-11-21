@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.projectpath.ui.explorer.ExplorerFragment;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -59,7 +60,7 @@ public class Login extends AppCompatActivity {
 
     public void clickLg(View view){
         final Dialog dialog = new Dialog(this);
-        final Intent in1 = new Intent(this,MainMap.class);
+        final Intent in1 = new Intent(this, com.example.projectpath.ui.explorer.ExplorerFragment.class);
 
         lmail = mailet.getText().toString();
         lpass = passet.getText().toString();
