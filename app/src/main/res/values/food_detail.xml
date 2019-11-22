@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--This String in First Screen-->
+    <string name="reviews">Reviews</string>
+    <string name="location">Location</string>
+    <string name="tel_number">Contact</string>
+    <string name="promotion">Promotion</string>
+    <string name="photosnreviews">Photos and Reviews</string>
+    <string name="read_reviews">Read Reviews</string>
+</resources>

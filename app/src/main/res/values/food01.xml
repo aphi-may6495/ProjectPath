@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--This String in First Store-->
+    <string name="store_name1">iHere ชาบู และ ปิ้งย่าง</string>
+    <string name="rating">4.5</string>
+    <string name="reviewer">(2 Reviews)</string>
+    <string name="distance">| 0.2 km</string>
+    <string name="open_hour">| 10:30 - 22:30 น.</string>
+    <string name="store1_lo">4-18 ถนน วิภาวดีรังสิต ซอย 2 แขวง ดินแดง เขตดินแดง กรุงเทพมหานคร 10400</string>
+    <string name="store1_num">02-077-5462</string>
+    <string name="store1_promotion">399 บาท/ท่าน</string>
+</resources>

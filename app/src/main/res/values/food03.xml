@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--This String in Third Store-->
+    <string name="store_name3">Ebi Shabu</string>
+    <string name="rating3">4.3</string>
+    <string name="reviewer3">(5 Reviews)</string>
+    <string name="distance3">| 0.1 km</string>
+</resources>
