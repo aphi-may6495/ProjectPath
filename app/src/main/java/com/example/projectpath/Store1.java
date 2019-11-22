@@ -13,20 +13,23 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Food3 extends AppCompatActivity implements OnMapReadyCallback {
+public class Store1 extends AppCompatActivity implements OnMapReadyCallback {
+
     private GoogleMap mMap;
-    private final LatLng Ebi = new LatLng(13.7781627,100.5583598);
+    private final LatLng fitness = new LatLng(13.7759963,100.5590477);
     private static final int DEFAULT_ZOOM = 19;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food3);
+        setContentView(R.layout.activity_store);
 
         // Build the map.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.mapfood3);
+                .findFragmentById(R.id.mapstore1);
         mapFragment.getMapAsync(this);
+
+
     }
 
     /**
@@ -41,10 +44,10 @@ public class Food3 extends AppCompatActivity implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        mMap.addMarker(new MarkerOptions().position(Ebi).title("Ebi Shabu"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Ebi,DEFAULT_ZOOM));
+        mMap.addMarker(new MarkerOptions().position(fitness).title("UTCC Fitness Center"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(fitness,DEFAULT_ZOOM));
     }
 
-    public void showFood3(View view){startActivity(new Intent(this,Food3Map.class));}
+    public void showStore1(View view){startActivity(new Intent(this,Store1Map.class));}
     public void backMainFood(View view){startActivity(new Intent(this,MainFoodActivity.class));}
 }

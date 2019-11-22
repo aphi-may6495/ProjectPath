@@ -40,7 +40,6 @@ import com.google.android.gms.tasks.Task;
 
 public class Food1 extends AppCompatActivity implements OnMapReadyCallback {
 
-
     private GoogleMap mMap;
     private final LatLng iHere = new LatLng(13.778224, 100.558137);
     private static final int DEFAULT_ZOOM = 19;
@@ -55,9 +54,6 @@ public class Food1 extends AppCompatActivity implements OnMapReadyCallback {
                 .findFragmentById(R.id.mapfood1);
         mapFragment.getMapAsync(this);
 
-        ViewPager viewPager = findViewById(R.id.vpfood1);
-        ImageFood1 adapter = new ImageFood1(this);
-        viewPager.setAdapter(adapter);
 
     }
 
@@ -78,4 +74,5 @@ public class Food1 extends AppCompatActivity implements OnMapReadyCallback {
     }
 
     public void showFood1(View view){startActivity(new Intent(this,Food1Map.class));}
+    public void backMainFood(View view){startActivity(new Intent(this,MainFoodActivity.class));}
 }

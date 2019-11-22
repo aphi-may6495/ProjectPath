@@ -10,22 +10,23 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Food3 extends AppCompatActivity implements OnMapReadyCallback {
+public class Food2Map extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
-    private final LatLng Ebi = new LatLng(13.7781627,100.5583598);
+    private final LatLng Formosa = new LatLng(13.777959, 100.561013);
     private static final int DEFAULT_ZOOM = 19;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food3);
+        setContentView(R.layout.activity_food2_map);
 
         // Build the map.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.mapfood3);
+                .findFragmentById(R.id.mapfood22);
         mapFragment.getMapAsync(this);
     }
 
@@ -41,10 +42,13 @@ public class Food3 extends AppCompatActivity implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        mMap.addMarker(new MarkerOptions().position(Ebi).title("Ebi Shabu"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Ebi,DEFAULT_ZOOM));
+        mMap.addMarker(new MarkerOptions().position(Formosa).title("Formosa(Tea & More)"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Formosa,DEFAULT_ZOOM));
+
+        UiSettings mapUiSettings = mMap.getUiSettings();
+        mapUiSettings.setZoomControlsEnabled(true);
+        mapUiSettings.setCompassEnabled(true);
+        mapUiSettings.setZoomGesturesEnabled(true);
     }
 
-    public void showFood3(View view){startActivity(new Intent(this,Food3Map.class));}
-    public void backMainFood(View view){startActivity(new Intent(this,MainFoodActivity.class));}
 }

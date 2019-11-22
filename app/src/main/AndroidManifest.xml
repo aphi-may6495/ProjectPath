@@ -15,7 +15,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Food1Map"></activity>
+        <activity android:name=".Store2Map"></activity>
+        <activity android:name=".Store1Map" />
+        <activity android:name=".Food3Map" />
+        <activity android:name=".Food2Map" />
+        <activity android:name=".Store2" />
+        <activity android:name=".Store1" />
+        <activity android:name=".Food1Map" />
         <activity android:name=".MainAttractionsActivity" />
         <activity android:name=".UserActivity" />
         <activity android:name=".Food3" />

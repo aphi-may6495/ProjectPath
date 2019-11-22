@@ -5,4 +5,8 @@
     <string name="rating3">4.3</string>
     <string name="reviewer3">(5 Reviews)</string>
     <string name="distance3">| 0.1 km</string>
+    <string name="open_hour3">| 11:00 - 22:00 น.</string>
+    <string name="store3_lo">114 12 ถนน วิภาวดีรังสิต 2 แขวง ดินแดง เขตดินแดง กรุงเทพมหานคร 10400</string>
+    <string name="store3_num">098-246-4193</string>
+    <string name="store3_promotion">159 บาท/ท่าน เมื่อมาครบ 4 ท่าน</string>
 </resources>

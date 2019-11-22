@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--This String in First Store-->
+    <string name="store_name11">UTCC Fitness Center</string>
+    <string name="rating11">5</string>
+    <string name="reviewer11">(1 Reviews)</string>
+    <string name="distance11">| 0.1 km</string>
+    <string name="open_hour11">| 8:30 - 21:30 น.</string>
+    <string name="store11_lo">102 ถนน วิภาวดีรังสิต 2 แขวง ดินแดง เขตดินแดง กรุงเทพมหานคร 10400</string>
+    <string name="store11_num">02-022-0222</string>
+    <string name="store11_promotion">-</string>
+</resources>

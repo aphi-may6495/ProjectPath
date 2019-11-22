@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--This String in First Store-->
+    <string name="store_name22">The Room Karaoke</string>
+    <string name="rating22">3</string>
+    <string name="reviewer22">(2 Reviews)</string>
+    <string name="distance22">| 0.3 km</string>
+    <string name="open_hour22">| 10:30 - 23:30 น.</string>
+    <string name="store22_lo">4-1 ถนน วิภาวดีรังสิต 2 แขวง ดินแดง เขตดินแดง กรุงเทพมหานคร 10400</string>
+    <string name="store22_num">02-764-9122</string>
+    <string name="store22_promotion">ร้องครบ 3 ชั่วโมง ฟรี 1 ชั่วโมง</string>
+</resources>

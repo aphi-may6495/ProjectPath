@@ -12,6 +12,18 @@
         android:orientation="vertical"
         android:paddingTop="30dp"
         android:paddingBottom="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="15dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:text="Food Explore"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
 
         <LinearLayout
             android:id="@+id/store1"
@@ -31,13 +43,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="#6D6D6D"
-                android:src="@drawable/food0101">
+                android:src="@drawable/food0101"
+                android:onClick="toFood1">
             </ImageView>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:onClick="toFood1">
 
                 <TextView
                     android:id="@+id/head_textStore1"
@@ -104,13 +118,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="#6D6D6D"
-                android:src="@drawable/food0201">
+                android:src="@drawable/food0201"
+                android:onClick="toFood2">
             </ImageView>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:onClick="toFood2">
 
                 <TextView
                     android:id="@+id/head_textStore2"
@@ -177,13 +193,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="#6D6D6D"
-                android:src="@drawable/food0301">
+                android:src="@drawable/food0301"
+                android:onClick="toFood3">
             </ImageView>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:onClick="toFood3">
 
                 <TextView
                     android:id="@+id/head_textStore3"

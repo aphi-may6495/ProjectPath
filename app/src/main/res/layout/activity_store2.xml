@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Food1">
+    tools:context=".Store1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
                 android:paddingVertical="10dp"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/ic_arrow_back_black_24dp"
-                android:onClick="backMainFood"
+                android:onClick="backMainAtt"
                 android:contentDescription="Back"/>
             <Space
                 android:layout_width="240dp"
@@ -38,86 +38,65 @@
                 android:src="@drawable/favorite"
                 android:contentDescription="@string/title_fav"/>
         </LinearLayout>
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="10dp"
+            android:paddingLeft="40dp"
+            android:onClick="showStore2">
+            <fragment
+                android:id="@+id/mapstore2"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="280dp"
+                android:layout_height="170dp"
+                android:onClick="showStore2" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp">
+            <TextView
+                android:id="@+id/head_inStore2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginVertical="10dp"
-                android:paddingLeft="40dp"
-                android:onClick="showFood1">
-                <fragment
-                    android:id="@+id/mapfood1"
-                    android:name="com.google.android.gms.maps.SupportMapFragment"
-                    android:layout_width="280dp"
-                    android:layout_height="170dp"
-                    android:onClick="showFood1" />
-            </LinearLayout>
+                android:text="@string/store_name22"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="15dp"
-                android:paddingEnd="15dp"
-                android:paddingTop="10dp">
+                android:layout_below="@id/head_inStore2">
+                <ImageView
+                    android:id="@+id/star_rating2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_star_black_24dp"/>
                 <TextView
-                    android:id="@+id/head_inStore1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/store_name1"
-                    android:textStyle="bold"
-                    android:textSize="25sp"/>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/head_inStore1">
-                    <ImageView
-                        android:id="@+id/star_rating1"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/ic_star_black_24dp"/>
-                    <TextView
-                        android:id="@+id/rating1"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:paddingVertical="5dp"
-                        android:text="@string/rating"
-                        android:layout_toRightOf="@id/star_rating1"/>
-                    <TextView
-                        android:id="@+id/reviewer1"
-                        android:layout_width="80dp"
-                        android:layout_height="30dp"
-                        android:paddingVertical="5dp"
-                        android:text="@string/reviewer"
-                        android:layout_toRightOf="@id/rating1"/>
-                    <TextView
-                        android:id="@+id/openH"
-                        android:layout_width="130dp"
-                        android:layout_height="30dp"
-                        android:paddingVertical="5dp"
-                        android:text="@string/open_hour"
-                        android:layout_toRightOf="@id/reviewer1"/>
-                </RelativeLayout>
+                    android:id="@+id/rating2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/rating22"
+                    android:layout_toRightOf="@id/star_rating2"/>
+                <TextView
+                    android:id="@+id/reviewer2"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/reviewer22"
+                    android:layout_toRightOf="@id/rating2"/>
+                <TextView
+                    android:id="@+id/openH2"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/open_hour22"
+                    android:layout_toRightOf="@id/reviewer2"/>
             </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:paddingStart="15dp"
-                android:paddingEnd="15dp">
-                <TextView
-                    android:id="@+id/head_inStore1_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/location"
-                    android:textSize="22sp"
-                    android:textColor="@color/bg_border_orange"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/head_inStore1_1"
-                    android:paddingTop="3dp"
-                    android:text="@string/store1_lo"
-                    android:textSize="15sp"/>
-            </RelativeLayout>
+        </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -128,7 +107,7 @@
                 android:id="@+id/head_inStore1_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tel_number"
+                android:text="@string/location"
                 android:textSize="22sp"
                 android:textColor="@color/bg_border_orange"/>
             <TextView
@@ -136,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/head_inStore1_2"
                 android:paddingTop="3dp"
-                android:text="@string/store1_num"
+                android:text="@string/store22_lo"
                 android:textSize="15sp"/>
         </RelativeLayout>
         <RelativeLayout
@@ -146,7 +125,28 @@
             android:paddingStart="15dp"
             android:paddingEnd="15dp">
             <TextView
-                android:id="@+id/head_inStore1_3"
+                android:id="@+id/head_inStore2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tel_number"
+                android:textSize="22sp"
+                android:textColor="@color/bg_border_orange"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/head_inStore2_2"
+                android:paddingTop="3dp"
+                android:text="@string/store22_num"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+            <TextView
+                android:id="@+id/head_inStore2_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/promotion"
@@ -155,9 +155,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/head_inStore1_3"
+                android:layout_below="@+id/head_inStore2_3"
                 android:paddingTop="3dp"
-                android:text="@string/store1_promotion"
+                android:text="@string/store22_promotion"
                 android:textSize="15sp"/>
         </RelativeLayout>
     </LinearLayout>
@@ -187,22 +187,20 @@
             android:layout_height="110dp"
             android:layout_gravity="center"
             android:background="#BEBEBE"
-            android:src="@drawable/food0101"/>
+            android:src="@drawable/store0201"/>
         <ImageView
             android:id="@+id/fImg2"
             android:layout_width="106dp"
             android:layout_height="110dp"
             android:layout_gravity="center"
             android:layout_marginHorizontal="10dp"
-            android:background="#BEBEBE"
-            android:src="@drawable/food0102"/>
+            android:background="#BEBEBE"/>
         <ImageView
             android:id="@+id/fImg3"
             android:layout_width="106dp"
             android:layout_height="110dp"
             android:layout_gravity="center"
-            android:background="#BEBEBE"
-            android:src="@drawable/food0104"/>
+            android:background="#BEBEBE"/>
     </LinearLayout>
 
     <Button

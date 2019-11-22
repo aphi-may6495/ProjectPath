@@ -5,4 +5,8 @@
     <string name="rating2">4.2</string>
     <string name="reviewer2">(3 Reviews)</string>
     <string name="distance2">| 0.3 km</string>
+    <string name="open_hour2">| 11:30 - 22:00 น.</string>
+    <string name="store2_lo">101 ซอย วิภาวดีรังสิต 2 ถนน วิภาวดีรังสิต 2 แขวง ดินแดง เขตดินแดง กรุงเทพมหานคร 10400</string>
+    <string name="store2_num">088-885-8975</string>
+    <string name="store2_promotion">สะสมสแตมป์ครบ 10 วง แลกฟรี 1 แก้ว</string>
 </resources>

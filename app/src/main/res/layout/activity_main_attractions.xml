@@ -1,9 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainAttractionsActivity">
+    android:background="#BEBEBE">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="15dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:text="Attractions Explore"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:id="@+id/store1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="#ffffff"
+            android:onClick="toStore11">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#6D6D6D"
+                android:src="@drawable/store0101"
+                android:onClick="toStore11">
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:onClick="toStore11">
+
+                <TextView
+                    android:id="@+id/head_textStore1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/store_name1"
+                    android:textStyle="bold"
+                    android:textSize="22sp"/>
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/head_textStore1">
+                    <ImageView
+                        android:id="@+id/star_rating1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_star_black_24dp"/>
+                    <TextView
+                        android:id="@+id/rating1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingVertical="5dp"
+                        android:text="@string/rating"
+                        android:layout_toRightOf="@id/star_rating1"/>
+                    <TextView
+                        android:id="@+id/reviewer1"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:paddingVertical="5dp"
+                        android:text="@string/reviewer"
+                        android:layout_toRightOf="@id/rating1"/>
+                    <TextView
+                        android:id="@+id/dist"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:paddingVertical="5dp"
+                        android:text="@string/distance"
+                        android:layout_toRightOf="@id/reviewer1"/>
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/favorite"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/store2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="#ffffff"
+            android:onClick="toStore22">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#6D6D6D"
+                android:src="@drawable/food0201"
+                android:onClick="toStore22">
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:onClick="toStore2">
+
+                <TextView
+                    android:id="@+id/head_textStore2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/store_name2"
+                    android:textStyle="bold"
+                    android:textSize="22sp"/>
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/head_textStore2">
+                    <ImageView
+                        android:id="@+id/star_rating2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_star_black_24dp"/>
+                    <TextView
+                        android:id="@+id/rating2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingVertical="5dp"
+                        android:text="@string/rating2"
+                        android:layout_toRightOf="@id/star_rating2"/>
+                    <TextView
+                        android:id="@+id/reviewer2"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:paddingVertical="5dp"
+                        android:text="@string/reviewer2"
+                        android:layout_toRightOf="@id/rating2"/>
+                    <TextView
+                        android:id="@+id/dist2"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:paddingVertical="5dp"
+                        android:text="@string/distance2"
+                        android:layout_toRightOf="@id/reviewer2"/>
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/favorite"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+    </LinearLayout>
+</ScrollView>
